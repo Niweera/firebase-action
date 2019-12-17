@@ -16,4 +16,7 @@ if [ -n "$PROJECT_ID" ]; then
     firebase use --add $PROJECT_ID
 fi
 
+pwd
+ls
+
 sh -c "firebase $*"
