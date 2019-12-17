@@ -2,6 +2,9 @@
 
 set -e
 
+echo "\npwd\n" 
+pwd
+
 if [ -z "$FIREBASE_TOKEN" ]; then
     echo "FIREBASE_TOKEN is required to run commands with the firebase cli"
     exit 126
@@ -16,7 +19,13 @@ if [ -n "$PROJECT_ID" ]; then
     firebase use --add $PROJECT_ID
 fi
 
+echo "\nproject path is:" $PROJECT_PATH "\n"
+
+echo "\npwd\n" 
 pwd
+
+echo "\nls\n"
 ls
 
+echo "\nnow running firebase actions\n"
 sh -c "firebase $*"

@@ -5,3 +5,4 @@
 !entrypoint.sh
 !LICENSE
 !README.md
+docker-compose.env
