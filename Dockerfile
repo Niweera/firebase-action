@@ -1,6 +1,6 @@
-FROM node:10-slim
+FROM node:14.18.1-buster
 
-LABEL version="1.1.0"
+LABEL version="1.2.3"
 LABEL repository="https://github.com/w9jds/firebase-action"
 LABEL homepage="https://github.com/w9jds/firebase-action"
 LABEL maintainer="Jeremy Shore <w9jds@github.com>"
